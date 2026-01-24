@@ -88,4 +88,8 @@ Il est conçu pour être :
 
 ## 📄 Licence
 
-Ce projet est sous **Licence MIT** :
+<p align="center">
+  <a href="https://opensource.org/license/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
+  </a>
+</p>
