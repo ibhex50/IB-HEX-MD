@@ -5,13 +5,13 @@
 </h1>
 
 <p align="center">
-  <!-- GIF animé du bot -->
+  <!-- GIF ou image animée du bot -->
   <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" width="700" alt="IB-HEX-MD Animation"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=🤖BIENVENUE🤖+CHEZ+🥷IBRAHIMA SORY SACKO🥷;DE+LA+🚀HEX-BOT🚀+DE+NOUVELLE+GÉNÉRATION"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=BIENVENUE+CHEZ+IBRAHIMA+SORY+SACKO;DE+LA+HEX-BOT+DE+NOUVELLE+GÉNÉRATION"/>
   </a>
 </p>
 
@@ -27,10 +27,11 @@
   <a href="https://github.com/ibhex50/IB-HEX-MD/issues">
     <img src="https://img.shields.io/github/issues/ibhex50/IB-HEX-MD?style=for-the-badge&color=00ffaa"/>
   </a>
-  <a href="https://github.com/ibhex50/IB-HEX-MD/blob/main/LICENSE">
-    <p align="center">
   <a href="https://opensource.org/license/MIT">
     <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
+  </a>
+  <a href="https://github.com/WhiskeySockets/Baileys">
+    <img src="https://img.shields.io/badge/Baileys-GitHub-blue?style=for-the-badge"/>
   </a>
 </p>
 
@@ -61,6 +62,7 @@ Il est conçu pour être :
 - 🚀 Performances optimisées  
 - 📁 Actif **24h/24 – 7j/7**  
 - 📱 Compatible Android / Render / Panel  
+- 🤖 Intégré avec **[Baileys](https://github.com/WhiskeySockets/Baileys)**
 
 ---
 
@@ -80,3 +82,6 @@ Il est conçu pour être :
 ---
 
 ## 📄 Licence
+
+Ce projet est sous **Licence MIT**.  
+Pour plus d’infos : [MIT License sur Open Source](https://opensource.org/license/MIT)
