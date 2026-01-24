@@ -4,7 +4,7 @@
   </span>
 </h1>
 <p align="center">
-  <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" width="500" alt="IB-HEX-MD Logo"/>
+    <img alt="IB-HEX-MD" src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg">
 </p>
 
 <p align="center">
@@ -67,18 +67,6 @@ Il est conçu pour être :
 - Permettre une personnalisation totale  
 - Servir de fondation pour des bots avancés  
 
----
-
-
-## 📊 Statistiques GitHub
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ibhex50&show_icons=true&theme=tokyonight"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ibhex50&theme=tokyonight"/>
-</p>
 
 ---
 
