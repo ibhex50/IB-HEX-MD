@@ -6,12 +6,12 @@
 
 <p align="center">
   <!-- GIF ou image animée du bot -->
-  <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" width="400" alt="IB-HEX-MD Animation"/>
+  <img src="https://i.ibb.co/vvLVkvkR/IMG-20260118-WA0276.jpg" width="700" alt="IB-HEX-MD Animation"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=BIENVENUE+CHEZ+IBRAHIMA+SORY+SACKO🥷;+🇬🇳HEX-BOT🇬🇳+🚀DE+NOUVELLE+GÉNÉRATION🚀"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=BIENVENUE+CHEZ+🥷IBRAHIMA+SORY+SACKO🥷;+🇬🇳HEX-BOT🇬🇳+🚀DE+NOUVELLE+GÉNÉRATION🚀"/>
   </a>
 </p>
 
