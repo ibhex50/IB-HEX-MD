@@ -3,14 +3,13 @@
     🚀 𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗 🚀
   </span>
 </h1>
-
 <p align="center">
-  <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" width="900" alt="IB-HEX-MD Logo"/>
+  <img src="./assets/ib-hex-md.png" alt="IB-HEX-MD Logo" width="500"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=26&center=true&vCenter=true&width=900&height=80&lines=CHEZ+IBRAHIMA+SORY+SACKO+DE+LA+NOUVELLE+GÉNÉRATION+DE+𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗+">
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=26&center=true&vCenter=true&width=900&height=80&lines=CHEZ+IB+SACKO+DE+LA+HEX-BOT+">
   </a>
 </p>
 
