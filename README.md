@@ -5,12 +5,12 @@
 </h1>
 
 <p align="center">
-  <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" width="600" alt="IB-HEX-MD Logo"/>
+  <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" width="900" alt="IB-HEX-MD Logo"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=26&center=true&vCenter=true&width=900&height=80&lines=+BIENVENUE+CHEZ+IBRAHIMA+SORY+SACKO🥷+DE+LA+NOUVELLE+GÉNÉRATION+DE+🥷𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗🥷+">
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=26&center=true&vCenter=true&width=900&height=80&lines=CHEZ+IBRAHIMA+SORY+SACKO🥷+DE+LA+NOUVELLE+GÉNÉRATION+DE+🥷𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗🥷+">
   </a>
 </p>
 
@@ -57,7 +57,7 @@ Il est conçu pour être :
 - 🔐 Sécurité renforcée
 - 🚀 Performances optimisées
 - 📁 Actif **24h/24 – 7j/7**
-- 📱 Compatible Android / Cloud / Panel
+- 📱 Compatible Android / Render / Panel
 
 ---
 
@@ -70,15 +70,6 @@ Il est conçu pour être :
 
 ---
 
-## 🛠️ Technologies utilisées
-
-- WhatsApp Multi-Device  
-- Node.js / Python  
-- Baileys  
-- Système de plugins  
-- Hébergement cloud compatible  
-
----
 
 ## 📊 Statistiques GitHub
 
