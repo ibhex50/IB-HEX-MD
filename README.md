@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=26&center=true&vCenter=true&width=900&height=80&lines=CHEZ+IBRAHIMA+SORY+SACKO🥷+DE+LA+NOUVELLE+GÉNÉRATION+DE+🥷𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗🥷+">
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=26&center=true&vCenter=true&width=900&height=80&lines=CHEZ+IBRAHIMA+SORY+SACKO+DE+LA+NOUVELLE+GÉNÉRATION+DE+𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗+">
   </a>
 </p>
 
