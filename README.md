@@ -28,6 +28,8 @@
     <img src="https://img.shields.io/github/issues/ibhex50/IB-HEX-MD?style=for-the-badge&color=00ffaa"/>
   </a>
   <a href="https://github.com/ibhex50/IB-HEX-MD/blob/main/LICENSE">
+    <p align="center">
+  <a href="https://opensource.org/license/MIT">
     <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
   </a>
 </p>
@@ -62,15 +64,6 @@ Il est conçu pour être :
 
 ---
 
-## 🧠 Objectifs du projet
-
-- Automatiser WhatsApp facilement  
-- Offrir une base stable et professionnelle  
-- Permettre une personnalisation totale  
-- Servir de fondation pour des bots avancés  
-
----
-
 ## 📊 Statistiques GitHub
 
 <p align="center">
@@ -87,9 +80,3 @@ Il est conçu pour être :
 ---
 
 ## 📄 Licence
-
-<p align="center">
-  <a href="https://opensource.org/license/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
-  </a>
-</p>
