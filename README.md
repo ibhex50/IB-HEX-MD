@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=BIENVENUE+CHEZ+🥷IBRAHIMA+SORY+SACKO🥷;+🇬🇳HEX-BOT🇬🇳+🚀DE+NOUVELLE+GÉNÉRATION🚀"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=BIENVENUE+CHEZ+🥷 IBRAHIMA+SORY+SACKO 🥷;+🇬🇳 HEX-BOT 🇬🇳+🚀 DE+NOUVELLE+GÉNÉRATION 🚀"/>
   </a>
 </p>
 
@@ -39,7 +39,10 @@
 
 ## ✨ Présentation
 
-**𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗** est un **bot WhatsApp Multi-Device de nouvelle génération**, développé par  
+**𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗** 
+
+-est un **bot WhatsApp Multi-Device de nouvelle génération**,
+développé par  
 🥷 **Ibrahima Sory Sacko** 🥷.  
 
 Il est conçu pour être :  
