@@ -4,7 +4,7 @@
   </span>
 </h1>
 <p align="center">
-  <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" alt="IB-HEX-MD Logo" width="500"/>
+  <img src="https://i.ibb.co/BHWctDtn/IMG-20260123-WA0923.jpg" width="500" alt="IB-HEX-MD Logo"/>
 </p>
 
 <p align="center">
