@@ -6,7 +6,7 @@
 
 <p align="center">
   <!-- GIF ou image animée du bot -->
-  <img src="https://i.ibb.co/39mD5w6t/file-00000000a01071f8a1dc0220979539a9.png" width="700" alt="IB-HEX-MD Animation"/>
+  <img src="https://i.ibb.co/39mD5w6t/file-00000000a01071f8a1dc0220979539a9.png" width="900" alt="IB-HEX-MD Animation"/>
 </p>
 
 <p align="center">
