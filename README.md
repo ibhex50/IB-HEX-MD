@@ -41,8 +41,8 @@
 ## ✨ Présentation
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=est un **bot WhatsApp Multi-Device de nouvelle génération**,
-développé par ibsacko" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=est+un+**bot+ WhatsApp+Multi+Device+de+lanouvelle+génération**;
+développé+par+ibsacko" alt="Typing SVG" />
 </p>
 
 **𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗** 
