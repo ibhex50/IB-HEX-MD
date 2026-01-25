@@ -1,9 +1,12 @@
+const axios = require("axios");
+
 module.exports = {
   name: "happy",
-  desc: "Être heureux",
   async execute(sock, m) {
+    const { data } = await axios.get("https://api.waifu.pics/sfw/happy");
+
     await sock.sendMessage(m.key.remoteJid, {
-      text: "😄 Trop heureux aujourd’hui !"
+      sticker: { url: data.url }
     });
   }
 };
