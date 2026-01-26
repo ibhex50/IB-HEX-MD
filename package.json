@@ -11,17 +11,15 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "7.13.0",
-    "pino": "*",
-    "qrcode-terminal": "*",
-    "dotenv": "*",
+    "@whiskeysockets/baileys": "latest",
+    "pino": "^8.17.0",
+    "qrcode-terminal": "^0.12.0",
+    "dotenv": "^16.4.5",
     "node-fetch": "2",
     "image-data-uri": "1.0.3",
-    "ytdl-core": "*",
-    "puppeteer": "*",
-    "axios": "*",
-    "openai": "*",
-    "express": "*",
-    "socket.io": "*"
+    "ytdl-core": "^4.11.5",
+    "axios": "^1.6.8",
+    "openai": "^4.24.1",
+    "express": "^4.19.2"
   }
 }
