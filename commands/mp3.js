@@ -1,40 +1,62 @@
-const ytdl = require('ytdl-core');
-const ffmpeg = require('fluent-ffmpeg');
-const { PassThrough } = require('stream');
+const ytdl = require("ytdl-core");
 
 module.exports = {
   name: "mp3",
-  desc: "Convertit une vidéo YouTube en MP3",
+  desc: "Télécharger une vidéo YouTube en audio (mp3)",
   async execute(sock, m, args) {
     try {
-      if (!args.length) return await sock.sendMessage(m.key.remoteJid, { text: "❌ Envoie un lien vidéo à convertir." });
-
-      const link = args[0];
-
-      // Vérifie que le lien est valide
-      if (!ytdl.validateURL(link)) {
-        return await sock.sendMessage(m.key.remoteJid, { text: "❌ Lien YouTube invalide." });
+      if (!args[0]) {
+        return await sock.sendMessage(
+          m.key.remoteJid,
+          { text: "❌ Donne un lien YouTube.\nEx: Ib mp3 https://youtu.be/xxxx" },
+          { quoted: m }
+        );
       }
 
-      // Crée un flux pour convertir en MP3
-      const stream = ytdl(link, { filter: 'audioonly' });
-      const output = new PassThrough();
+      const url = args[0];
 
-      ffmpeg(stream)
-        .audioBitrate(128)
-        .format('mp3')
-        .pipe(output);
+      if (!ytdl.validateURL(url)) {
+        return await sock.sendMessage(
+          m.key.remoteJid,
+          { text: "❌ Lien YouTube invalide." },
+          { quoted: m }
+        );
+      }
 
-      // Envoie le MP3 directement au chat
-      await sock.sendMessage(m.key.remoteJid, {
-        audio: output,
-        mimetype: 'audio/mpeg',
-        fileName: `audio_${Date.now()}.mp3`
+      // Infos vidéo
+      const info = await ytdl.getInfo(url);
+      const title = info.videoDetails.title;
+
+      await sock.sendMessage(
+        m.key.remoteJid,
+        { text: "⏳ Téléchargement de l'audio en cours..." },
+        { quoted: m }
+      );
+
+      // Stream audio
+      const audioStream = ytdl(url, {
+        filter: "audioonly",
+        quality: "highestaudio"
       });
 
+      await sock.sendMessage(
+        m.key.remoteJid,
+        {
+          audio: audioStream,
+          mimetype: "audio/mpeg",
+          ptt: false,
+          fileName: `${title}.mp3`
+        },
+        { quoted: m }
+      );
+
     } catch (err) {
-      console.error(err);
-      await sock.sendMessage(m.key.remoteJid, { text: "❌ Une erreur est survenue lors de la conversion en MP3." });
+      console.error("❌ Erreur mp3:", err);
+      await sock.sendMessage(
+        m.key.remoteJid,
+        { text: "❌ Erreur lors du téléchargement MP3." },
+        { quoted: m }
+      );
     }
   }
 };
