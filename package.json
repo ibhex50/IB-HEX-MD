@@ -15,7 +15,7 @@
   "author": "Ib Sacko",
   "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^7.13.3",
+    "@whiskeysockets/baileys": "^6.7.18",
     "dotenv": "^16.3.1",
     "node-fetch": "^2.6.12",
     "pino": "^8.12.0",
