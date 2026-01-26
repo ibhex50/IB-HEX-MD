@@ -1,0 +1,21 @@
+{
+  "name": "ib-hex-bot",
+  "version": "2.0.0",
+  "description": "IB_HEX_BOT WhatsApp Multi-Device",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ib Sacko",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.8",
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.4.5",
+    "pino": "^8.17.2",
+    "qrcode-terminal": "^0.12.0",
+    "uuid": "^9.0.1"
+  }
+}
