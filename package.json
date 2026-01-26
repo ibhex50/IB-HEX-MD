@@ -16,7 +16,6 @@
     "qrcode-terminal": "^0.12.0",
     "dotenv": "^16.4.5",
     "node-fetch": "2",
-    "image-data-uri": "1.0.3",
     "ytdl-core": "^4.11.5",
     "axios": "^1.6.8",
     "openai": "^4.24.1",
