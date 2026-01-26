@@ -50,25 +50,22 @@ async function startIBHEX() {
     browser: ["IB-HEX-MD", "Chrome", "2.0"]
   });
 
-  // 🔢 PAIR CODE (sans QR)
-  if (!state.creds.registered && process.env.PAIR_CODE === "true") {
+  // ──────────────
+  // 🔢 PAIR CODE manuel
+  // ──────────────
+  if (!process.env.SESSION_ID && process.env.PAIR_CODE === "true") {
     const rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout
     });
 
     rl.question("📱 Numéro WhatsApp (ex: 224XXXXXXXX) : ", async (num) => {
-      try {
-        num = num.replace(/[^0-9]/g, "");
-        const code = await sock.requestPairingCode(num);
+      num = num.replace(/[^0-9]/g, "");
 
-        console.log("\n🔢 PAIR CODE : " + code);
-        console.log("➡️ WhatsApp > Appareils liés > Lier avec un numéro\n");
-      } catch (err) {
-        console.error("❌ Erreur Pair Code :", err);
-      } finally {
-        rl.close();
-      }
+      // Baileys gère la connexion automatiquement
+      console.log("\n🔗 Connecte-toi avec le QR qui va s'afficher dans le terminal...\n");
+
+      rl.close();
     });
   }
 
@@ -77,10 +74,7 @@ async function startIBHEX() {
     await saveCreds();
 
     if (!process.env.SESSION_ID) {
-      const sessionID = Buffer.from(
-        JSON.stringify(state.creds)
-      ).toString("base64");
-
+      const sessionID = Buffer.from(JSON.stringify(state.creds)).toString("base64");
       console.log("\n🔐 SESSION_ID (copie pour Render) :\n");
       console.log(sessionID);
       console.log("\n───────────────────────────────\n");
@@ -91,7 +85,7 @@ async function startIBHEX() {
   sock.ev.on("connection.update", (update) => {
     const { connection, qr, lastDisconnect } = update;
 
-    // 📲 QR CODE (si PAIR_CODE=false)
+    // QR CODE automatique si PAIR_CODE=false
     if (qr && process.env.PAIR_CODE !== "true") {
       console.log("\n📲 Scan le QR Code pour connecter IB-HEX-MD\n");
       QRCode.generate(qr, { small: true });
@@ -105,7 +99,6 @@ async function startIBHEX() {
 
     if (connection === "close") {
       const reason = lastDisconnect?.error?.output?.statusCode;
-
       if (reason !== DisconnectReason.loggedOut) {
         console.log("♻️ Reconnexion...");
         startIBHEX();
