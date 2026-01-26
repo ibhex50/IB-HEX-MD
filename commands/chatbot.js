@@ -1,29 +1,41 @@
-const { Configuration, OpenAIApi } = require("openai");
-require('dotenv').config();
+const OpenAI = require("openai");
 
-const configuration = new Configuration({ apiKey: process.env.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});
-const openai = new OpenAIApi(configuration);
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+});
 
 module.exports = {
   name: "chatbot",
-  desc: "Discussion avec le chatbot",
+  desc: "Chatbot IA automatique",
   async execute(sock, m, args) {
-    if (!args.length) 
-      return await sock.sendMessage(m.key.remoteJid, { text: "❌ Écris quelque chose pour le chatbot." });
-
-    const input = args.join(" ");
+    if (!args.length) {
+      return sock.sendMessage(m.key.remoteJid, {
+        text: "❌ Écris un message pour le chatbot."
+      });
+    }
 
     try {
-      const response = await openai.createChatCompletion({
-        model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: input }],
+      const question = args.join(" ");
+
+      const response = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [
+          { role: "system", content: "Tu es un assistant WhatsApp sympa et utile." },
+          { role: "user", content: question }
+        ]
       });
 
-      const reply = response.data.choices[0].message.content;
-      await sock.sendMessage(m.key.remoteJid, { text: `💬 Chatbot : ${reply}` });
-    } catch (error) {
-      console.error(error);
-      await sock.sendMessage(m.key.remoteJid, { text: "❌ Erreur avec l'API Chatbot" });
+      const reply = response.choices[0].message.content;
+
+      await sock.sendMessage(m.key.remoteJid, {
+        text: `🤖 Chatbot : ${reply}`
+      });
+
+    } catch (err) {
+      console.error("Chatbot error:", err);
+      await sock.sendMessage(m.key.remoteJid, {
+        text: "❌ Erreur du chatbot."
+      });
     }
   }
 };
