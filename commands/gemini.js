@@ -14,7 +14,7 @@ module.exports = {
       const response = await fetch("https://api.gemini.ai/v1/chat", {
         method: "POST",
         headers: {
-          "Authorization": `Bearer ${process.env.AIzaSyAk-vcYwpF_APrV6G3Lu1Fsr5UnNJMcNQw}`,
+          "Authorization": `Bearer ${process.env.GEMINI_API_KEY}`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({ prompt: question })
@@ -22,9 +22,10 @@ module.exports = {
 
       const data = await response.json();
       const answer = data.response || "❌ Pas de réponse de Gemini";
+
       await sock.sendMessage(m.key.remoteJid, { text: `💡 Gemini : ${answer}` });
     } catch (error) {
-      console.error(error);
+      console.error("Erreur Gemini :", error);
       await sock.sendMessage(m.key.remoteJid, { text: "❌ Erreur avec l'API Gemini" });
     }
   }
