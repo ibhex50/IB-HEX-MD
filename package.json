@@ -1,21 +1,28 @@
 {
-  "name": "ib-hex-bot",
+  "name": "ib-hex-md",
   "version": "2.0.0",
-  "description": "IB_HEX_BOT WhatsApp Multi-Device",
+  "description": "IB-HEX-MD WhatsApp Bot - Multi-device avec Baileys",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
     "start": "node index.js"
   },
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "bot",
+    "ib-hex-md"
+  ],
   "author": "Ib Sacko",
   "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.8",
-    "axios": "^1.6.7",
-    "chalk": "^4.1.2",
-    "dotenv": "^16.4.5",
-    "pino": "^8.17.2",
-    "qrcode-terminal": "^0.12.0",
-    "uuid": "^9.0.1"
-  }
+    "@whiskeysockets/baileys": "^7.14.3",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.6.12",
+    "pino": "^8.12.0",
+    "qrcode-terminal": "^0.12.1",
+    "axios": "^1.6.6",
+    "image-data-uri": "^2.0.1",
+    "form-data": "^4.1.3"
+  },
+  "type": "commonjs"
 }
