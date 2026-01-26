@@ -1,7 +1,7 @@
 {
   "name": "ib-hex-md",
   "version": "2.0.0",
-  "description": "IB-HEX-MD WhatsApp Bot (Baileys Multi-Device)",
+  "description": "IB-HEX-MD WhatsApp Bot (Baileys Multi-Device) avec QR Web",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -12,14 +12,15 @@
   },
   "dependencies": {
     "@whiskeysockets/baileys": "latest",
-    "openai": "*",
-    "axios": "*",
-    "pino": "*",
-    "qrcode-terminal": "*",
-    "dotenv": "*",
+    "pino": "^8.12.0",
+    "qrcode-terminal": "^0.12.0",
+    "dotenv": "^17.2.3",
     "node-fetch": "2",
-    "image-data-uri": "*",
-    "ytdl-core": "*",
-    "puppeteer": "*"
+    "image-data-uri": "^2.0.3",
+    "ytdl-core": "^4.11.0",
+    "puppeteer": "^21.3.1",
+    "axios": "^1.6.6",
+    "express": "^4.18.2",
+    "openai": "^4.22.1"
   }
 }
