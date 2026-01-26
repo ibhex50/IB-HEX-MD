@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@whiskeysockets/baileys": "latest",
+    "openai": "*",
     "axios": "*",
     "pino": "*",
     "qrcode-terminal": "*",
