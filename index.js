@@ -1,62 +1,32 @@
 /**
- * 🤖 IB-HEX-MD – QR Web + Render Compatible
+ * 🥷 IB-HEX-MD
  * Author : Ib Sacko
+ * Engine : Baileys MD
  */
 
 require("dotenv").config();
 
-const express = require("express");
-const QRCode = require("qrcode");
-
 const {
   default: makeWASocket,
   useMultiFileAuthState,
-  fetchLatestBaileysVersion,
-  DisconnectReason
+  DisconnectReason,
+  fetchLatestBaileysVersion
 } = require("@whiskeysockets/baileys");
 
 const Pino = require("pino");
+const QRCode = require("qrcode-terminal");
 const fs = require("fs");
 const path = require("path");
 
 const handler = require("./handler");
 const config = require("./config");
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-let latestQR = null;
-
+// 📁 Session
 const SESSION_PATH = path.join(__dirname, "session");
 if (!fs.existsSync(SESSION_PATH)) fs.mkdirSync(SESSION_PATH);
 
-// ─────────────────────────────
-// 🌐 PAGE WEB QR
-// ─────────────────────────────
-app.get("/", async (req, res) => {
-  if (!latestQR) {
-    return res.send(`
-      <h2>✅ IB-HEX-MD</h2>
-      <p>Bot connecté ou QR non disponible.</p>
-    `);
-  }
-
-  const qrImage = await QRCode.toDataURL(latestQR);
-  res.send(`
-    <html>
-      <body style="text-align:center;font-family:sans-serif">
-        <h2>📲 Scanner le QR WhatsApp</h2>
-        <img src="${qrImage}" />
-        <p>WhatsApp → Appareils liés</p>
-      </body>
-    </html>
-  `);
-});
-
-// ─────────────────────────────
 // 🚀 START BOT
-// ─────────────────────────────
-async function startBot() {
+async function startIBHEX() {
   console.log("⚡ Démarrage de IB-HEX-MD...");
 
   const { version } = await fetchLatestBaileysVersion();
@@ -69,47 +39,50 @@ async function startBot() {
     browser: ["IB-HEX-MD", "Chrome", "2.0"]
   });
 
+  // 🔐 Sauvegarde session
   sock.ev.on("creds.update", saveCreds);
 
+  // 📡 CONNEXION + QR
   sock.ev.on("connection.update", (update) => {
     const { connection, qr, lastDisconnect } = update;
 
     if (qr) {
-      latestQR = qr;
-      console.log("📲 QR reçu – disponible sur le site web");
+      console.log("\n📲 Scanne le QR Code pour connecter IB-HEX-MD\n");
+      QRCode.generate(qr, { small: true });
     }
 
     if (connection === "open") {
-      latestQR = null;
-      console.log("✅ WhatsApp connecté !");
+      console.log("✅ IB-HEX-MD connecté avec succès !");
+      console.log("🔑 Préfixe :", config.prefix);
+      console.log("🔧 Mode :", config.mode);
     }
 
     if (connection === "close") {
       const reason = lastDisconnect?.error?.output?.statusCode;
       if (reason !== DisconnectReason.loggedOut) {
         console.log("♻️ Reconnexion...");
-        startBot();
+        startIBHEX();
       } else {
-        console.log("❌ Session supprimée");
+        console.log("❌ Session supprimée. Rescan QR.");
       }
     }
   });
 
-  sock.ev.on("messages.upsert", async ({ messages }) => {
+  // 📩 MESSAGES (FIX SYNCHRONISATION)
+  sock.ev.on("messages.upsert", async ({ messages, type }) => {
     try {
+      if (type !== "notify") return;
+
       const m = messages[0];
-      if (!m.message || m.key.fromMe) return;
+      if (!m || !m.message) return;
+      if (m.key.fromMe) return;
+
       await handler(sock, m);
-    } catch (e) {
-      console.error(e);
+    } catch (err) {
+      console.error("❌ Message error :", err);
     }
   });
 }
 
-// ─────────────────────────────
 // ▶️ RUN
-// ─────────────────────────────
-app.listen(PORT, () => {
-  console.log(`🌐 Serveur Web actif sur le port ${PORT}`);
-  startBot();
-});
+startIBHEX();
