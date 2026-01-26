@@ -21,6 +21,7 @@ const Pino = require("pino");
 const QRCode = require("qrcode-terminal");
 const fs = require("fs");
 const path = require("path");
+const readline = require("readline");
 
 const handler = require("./handler");
 const config = require("./config");
@@ -39,7 +40,6 @@ async function startIBHEX() {
   }
 
   const { version } = await fetchLatestBaileysVersion();
-
   const { state, saveCreds } = await useMultiFileAuthState(SESSION_PATH);
 
   const sock = makeWASocket({
@@ -49,6 +49,28 @@ async function startIBHEX() {
     printQRInTerminal: false,
     browser: ["IB-HEX-MD", "Chrome", "2.0"]
   });
+
+  // 🔢 PAIR CODE (sans QR)
+  if (!state.creds.registered && process.env.PAIR_CODE === "true") {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    rl.question("📱 Numéro WhatsApp (ex: 224XXXXXXXX) : ", async (num) => {
+      try {
+        num = num.replace(/[^0-9]/g, "");
+        const code = await sock.requestPairingCode(num);
+
+        console.log("\n🔢 PAIR CODE : " + code);
+        console.log("➡️ WhatsApp > Appareils liés > Lier avec un numéro\n");
+      } catch (err) {
+        console.error("❌ Erreur Pair Code :", err);
+      } finally {
+        rl.close();
+      }
+    });
+  }
 
   // 🔐 Sauvegarde session + SESSION_ID
   sock.ev.on("creds.update", async () => {
@@ -69,7 +91,8 @@ async function startIBHEX() {
   sock.ev.on("connection.update", (update) => {
     const { connection, qr, lastDisconnect } = update;
 
-    if (qr) {
+    // 📲 QR CODE (si PAIR_CODE=false)
+    if (qr && process.env.PAIR_CODE !== "true") {
       console.log("\n📲 Scan le QR Code pour connecter IB-HEX-MD\n");
       QRCode.generate(qr, { small: true });
     }
@@ -87,7 +110,7 @@ async function startIBHEX() {
         console.log("♻️ Reconnexion...");
         startIBHEX();
       } else {
-        console.log("❌ Session supprimée. Relance avec QR.");
+        console.log("❌ Session supprimée. Relance avec QR ou Pair Code.");
       }
     }
   });
