@@ -43,7 +43,7 @@
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
     <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=■+■+■+■+■+est+un+bot+ WhatsApp+Multi+Device;de+la+nouvelle+génération**;
-développé+par+ibsacko" alt="Typing SVG" />
+développé+par+ibsacko" </a>
   </p>
 
 **𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗** 
