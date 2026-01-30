@@ -1,94 +1,53 @@
-<h1 align="center">
-  <span style="font-size: 3em; background: linear-gradient(90deg,#00ffff,#0080ff,#00ffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-    🚀 𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗 🚀
-  </span>
-</h1>
+<h1 align="center">🚀 IB-HEX-MD 🤖</h1>
 
 <p align="center">
-  <!-- GIF ou image animée du bot -->
-  <img src="https://i.ibb.co/39mD5w6t/file-00000000a01071f8a1dc0220979539a9.png" width="900" alt="IB-HEX-MD Animation"/>
+  <b>Bot WhatsApp Nouvelle Génération — Rapide • Sécurisé • Modulaire</b>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=🥷𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗🥷;🚀DE+LA+NOUVELLE+GÉNÉRATION🚀"/>
-  </a>
+  <img src="https://i.ibb.co/39mD5w6t/file-00000000a01071f8a1dc0220979539a9.png" width="850" alt="IB-HEX-MD"/>
 </p>
-
----
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD/stargazers">
     <img src="https://img.shields.io/github/stars/ibhex50/IB-HEX-MD?style=for-the-badge&color=00ffff"/>
   </a>
-  <a href="https://github.com/ibhex50/IB-HEX-MD/network/members">
+  <a href="https://github.com/ibhex50/IB-HEX-MD/forks">
     <img src="https://img.shields.io/github/forks/ibhex50/IB-HEX-MD?style=for-the-badge&color=0080ff"/>
   </a>
-  <a href="https://github.com/ibhex50/IB-HEX-MD/issues">
-    <img src="https://img.shields.io/github/issues/ibhex50/IB-HEX-MD?style=for-the-badge&color=00ffaa"/>
-  </a>
-  <a href="https://opensource.org/license/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
-  </a>
-  <a href="https://github.com/WhiskeySockets/Baileys">
-    <img src="https://img.shields.io/badge/Baileys-GitHub-blue?style=for-the-badge"/>
-  </a>
+  <img src="https://img.shields.io/badge/Status-ACTIVE-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
 </p>
 
 ---
-
 
 ## ✨ Présentation
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=BIENVENUE+CHEZ+𝗜𝗕𝗥𝗔𝗛𝗜𝗠𝗔+𝗦𝗢𝗥𝗬+𝗦𝗔𝗖𝗞𝗢;DU+𝗛𝗘𝗫-𝗚𝗔𝗧+et+𝗛𝗘𝗫-𝗕𝗢𝗧;COMMENCE+A+ACTIVÉ+TON+𝗛𝗘𝗫-𝗠𝗗" alt="Typing SVG" />
-</p>
+**IB-HEX-MD** est un bot WhatsApp **Multi-Device**, développé par  
+🥷 **Ibrahima Sory Sacko** 🥷  
 
-**𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗** 
-
-développé par  
-🥷 **Ibrahima Sory Sacko** 🥷.  
-
-Il est conçu pour être :  
-- ⚡ **Rapide**  
-- 🔐 **Sécurisé**  
-- 💎 **Modulaire**  
-- 🚀 **Évolutif**  
-
-**Dépôt officiel :**  
-🔗 [GitHub IB-HEX-MD](https://github.com/ibhex50/IB-HEX-MD)
+Conçu pour offrir :
+- ⚡ Performance maximale
+- 🔐 Sécurité renforcée
+- 💎 Architecture modulaire
+- 🚀 Évolutivité continue
 
 ---
 
-## ⚙️ Fonctionnalités principales
+## ⚙️ Fonctionnalités
 
-- 🔥 Bot WhatsApp **Next-Gen**  
-- ⚙️ Support complet **Multi-Device**  
-- 💎 Architecture **modulaire & extensible**  
-- 🔐 Sécurité renforcée  
-- 🚀 Performances optimisées  
-- 📁 Actif **24h/24 – 7j/7**  
-- 📱 Compatible Android / Render / Panel  
-- 🤖 Intégré avec **[Baileys](https://github.com/WhiskeySockets/Baileys)**
+- 🤖 WhatsApp Bot Multi-Device
+- 🔥 Architecture Next-Gen
+- 📂 Commandes modulaires
+- 🛠️ Facile à personnaliser
+- 📱 Compatible Android / VPS / Panel
+- ⚙️ Basé sur **Baileys**
 
 ---
 
-## 📊 Statistiques GitHub
+## 📦 Installation
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ibhex50&show_icons=true&theme=radical&count_private=true"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ibhex50&theme=radical"/>
-</p>
-
----
-
-## 🚀 Statut du projet
-
-🟢 **Projet actif — développement continu**
-
----
-
-## 📄 Licence
-
-Ce projet est sous **Licence MIT**.  
-Pour plus d’infos : [MIT License sur Open Source](https://opensource.org/license/MIT)
+### 1️⃣ Cloner le dépôt
+```bash
+git clone https://github.com/ibhex50/IB-HEX-MD.git
+cd IB-HEX-MD
