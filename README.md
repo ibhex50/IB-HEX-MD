@@ -41,7 +41,7 @@
 ## ✨ Présentation
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Hello+How+are+you%3F;Nous+vous+Présentons+IB-HEX-MD+Whatsapp+bot;DE+HEX-GAT+HEX-BOT" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Hello+How+are+you%3F=;Nous+vous+Présentons+IB-HEX-MD+Whatsapp+bot;DE+HEX-GAT+HEX-BOT" alt="Typing SVG" />
 </p>
 
 **𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗** 
