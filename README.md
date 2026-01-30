@@ -32,43 +32,55 @@
 
 ---
 
-## ✨ Présentation
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=3"/>
+</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&lines=BIENVENUE+SUR+IB-HEX-MD;DÉVELOPPÉ+PAR+IBRAHIMA+SORY+SACKO;ACTIVE+TON+BOT+WHATSAPP+NEXT-GEN"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&duration=3000&pause=800&color=00FFFF&center=true&vCenter=true&width=800&lines=✨+PRÉSENTATION"/>
 </p>
 
 **IB-HEX-MD** est un bot WhatsApp **Multi-Device**, développé par  
 🥷 **Ibrahima Sory Sacko** 🥷  
 
-🎯 Objectif : offrir un bot **fiable**, **rapide** et **facilement extensible**.
+🎯 Objectif : fournir un bot **fiable**, **rapide** et **hautement personnalisable**.
 
-### 🔹 Caractéristiques clés
-- ⚡ Exécution rapide  
-- 🔐 Sécurité renforcée  
-- 💎 Structure modulaire  
-- 🚀 Évolution continue  
+- ⚡ Rapide  
+- 🔐 Sécurisé  
+- 💎 Modulaire  
+- 🚀 Évolutif  
 
-🔗 **Dépôt officiel** :  
-👉 https://github.com/ibhex50/IB-HEX-MD
+🔗 https://github.com/ibhex50/IB-HEX-MD
 
 ---
 
-## ⚙️ Fonctionnalités principales
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=3"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=28&duration=3000&pause=800&color=00FFAA&center=true&vCenter=true&width=900&lines=⚙️+FONCTIONNALITÉS+PRINCIPALES"/>
+</p>
 
 - 🤖 Bot WhatsApp **Multi-Device**
 - 🔥 Architecture **Next-Gen**
 - 📂 Commandes modulaires
+- 🔐 Sécurité renforcée
 - 🚀 Performances optimisées
-- 🔐 Protection & stabilité
-- 📱 Compatible **Android / VPS / Panel**
+- 📱 Android / VPS / Panel
 - 🧠 Basé sur **Baileys**
 
 ---
 
-## 📦 Installation
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=3"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=28&duration=3000&pause=800&color=0080FF&center=true&vCenter=true&width=700&lines=📦+INSTALLATION"/>
+</p>
 
 ### 1️⃣ Cloner le dépôt
 ```bash
 git clone https://github.com/ibhex50/IB-HEX-MD.git
-cd IB-HEX-MD 
+cd IB-HEX-MD
