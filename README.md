@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/ibhex50/IB-HEX-MD">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=BIENVENUE+CHEZ+🥷IB-HEX-MD🥷;🚀DE+LA+NOUVELLE+GÉNÉRATION🚀"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&color=00ffff&size=28&center=true&vCenter=true&width=900&height=90&lines=🥷𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗🥷;🚀DE+LA+NOUVELLE+GÉNÉRATION🚀"/>
   </a>
 </p>
 
