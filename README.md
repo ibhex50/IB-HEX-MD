@@ -41,7 +41,7 @@
 ## ✨ Présentation
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Multi-device+WhatsApp+bot;Modular+plugin+architecture;Media+and+group+management+tools" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=BIENVENUE-CHEZ+𝗜𝗕𝗥𝗔𝗛𝗜𝗠𝗔+𝗦𝗢𝗥𝗬+𝗦𝗔𝗖𝗞𝗢;DU+𝗛𝗘𝗫-𝗚𝗔𝗧+et+𝗛𝗘𝗫-𝗕𝗢𝗧;COMMENCE+A+ACTIVÉ+TON+𝗛𝗘𝗫-𝗠𝗗" alt="Typing SVG" />
 </p>
 
 **𝗜𝗕-𝗛𝗘𝗫-𝗠𝗗** 
