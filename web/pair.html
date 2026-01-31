@@ -1,0 +1,21 @@
+<h3>Connexion par Pair Code</h3>
+
+<input id="num" placeholder="+224XXXXXXXX">
+<button onclick="go()">Générer</button>
+
+<p id="code"></p>
+<p id="session"></p>
+
+<script>
+async function go() {
+    const number = document.getElementById('num').value
+    const res = await fetch('/pair', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ number })
+    })
+    const data = await res.json()
+    document.getElementById('code').innerText = 'PAIR CODE : ' + data.pair_code
+    document.getElementById('session').innerText = 'SESSION_ID : ' + data.session_id
+}
+</script>
